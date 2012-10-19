@@ -4,9 +4,9 @@
 	<groupId>com.emergya.email.sender</groupId>
 	<artifactId>emailsender</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>Archetype - emailsender</name>
-	<url>http://maven.apache.org</url>
+	<version>1.0</version>
+	<name>Emailsender Maagya Component</name>
+	<url>http://www.emergya.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,25 +60,23 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
-
 		</plugins>
 	</build>
 
 
-	<distributionManagement>
+	
 		<!-- use the following if you're not using a snapshot version. -->
-		<repository>
-			<id>thirdparty.releases</id>
-			<name>Thirdparty Releases Repository</name>
-			<url>http://nexus.emergya.es/nexus/content/repositories/thirdparty/</url>
-		</repository>
+	<distributionManagement>
+		  <repository>
+			<id>nexus.releases</id>
+			<url>http://nexus.emergya.es/nexus/content/repositories/releases</url>
+		  </repository>
+	
 		<!-- use the following if you ARE using a snapshot version. -->
 		<snapshotRepository>
-			<id>third-party.snapshots</id>
-			<name>Thirdparty Snapshot Repository</name>
-			<url>http://nexus.emergya.es/nexus/content/repositories/third-party-snapshot/</url>
+			<id>nexus.snapshots</id>
+			<name>Emergya Public Snapshot Repository</name>
+			<url>http://nexus.emergya.es/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -90,7 +88,7 @@
 			<organization>Emergya Consultoría</organization>
 			<organizationUrl>http://www.emergya.es</organizationUrl>
 			<roles>
-				<role>Desarrollador</role>
+				<role>Developer</role>
 			</roles>
 		</developer>
 	</developers>
